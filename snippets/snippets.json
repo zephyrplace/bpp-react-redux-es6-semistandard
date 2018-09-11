@@ -2,13 +2,13 @@
     "react-component-class": {
         "prefix": "rcc",
         "body": [
-            "import React, { Component } from 'react'",
+            "import React, { Component } from 'react';",
             "",
             "export default class $1 extends Component {",
             "  render () {",
             "    return (",
             "      <div>$2</div>",
-            "    )",
+            "    );",
             "  }",
             "}",
             ""
@@ -18,15 +18,15 @@
     "react-component-stateless": {
         "prefix": "rcs",
         "body": [
-            "import React from 'react'",
+            "import React from 'react';",
             "",
             "const $1 = () => {",
             "  return (",
             "    <div>$2</div>",
-            "  )",
-            "}",
+            "  );",
+            "};",
             "",
-            "export default $1",
+            "export default $1;",
             ""
         ],
         "description": "Create a React Component Stateless"
@@ -34,22 +34,22 @@
     "react-component-class-proptypes": {
         "prefix": "rccp",
         "body": [
-            "import React, { Component } from 'react'",
-            "import PropTypes from 'prop-types'",
+            "import React, { Component } from 'react';",
+            "import PropTypes from 'prop-types';",
             "",
             "class $1 extends Component {",
             "  render () {",
             "    return (",
             "      <div>$3</div>",
-            "    )",
+            "    );",
             "  }",
             "}",
             "",
             "$1.propTypes = {",
             "  $2",
-            "}",
+            "};",
             "",
-            "export default $1",
+            "export default $1;",
             ""
         ],
         "description": "Create a React Component Class with PropTypes"
@@ -57,20 +57,20 @@
     "react-component-stateless-proptypes": {
         "prefix": "rcsp",
         "body": [
-            "import React from 'react'",
-            "import PropTypes from 'prop-types'",
+            "import React from 'react';",
+            "import PropTypes from 'prop-types';",
             "",
             "const $1 = props => {",
             "  return (",
             "    <div>$3</div>",
-            "  )",
-            "}",
+            "  );",
+            "};",
             "",
             "$1.propTypes = {",
             "  $2",
-            "}",
+            "};",
             "",
-            "export default $1",
+            "export default $1;",
             ""
         ],
         "description": "Create a React Component Class with PropTypes"
@@ -78,13 +78,13 @@
     "react-redux-container-connect": {
         "prefix": "rrcc",
         "body": [
-            "import { bindActionCreators } from 'redux'",
-            "import { connect } from 'react-redux'",
+            "import { bindActionCreators } from 'redux';",
+            "import { connect } from 'react-redux';",
             "",
-            "const mapStateToProps = (state) => ({ $1: state.$2 })",
-            "const mapDispatchToProps = (dispatch) => bindActionCreators($3, dispatch)",
+            "const mapStateToProps = (state) => ({ $1: state.$2 });",
+            "const mapDispatchToProps = (dispatch) => bindActionCreators($3, dispatch);",
             "",
-            "export default connect(mapStateToProps, mapDispatchToProps)($4)",
+            "export default connect(mapStateToProps, mapDispatchToProps)($4);",
             ""
         ],
         "description": "Create a Redux Container with connect and bindActionCreators"
@@ -97,9 +97,9 @@
             "    case $2:",
             "      $3",
             "    default:",
-            "      return state",
+            "      return state;",
             "  }",
-            "}",
+            "};",
             ""
         ],
         "description": "Create a Redux Reducer"
@@ -107,12 +107,12 @@
     "redux-action-function": {
         "prefix": "raf",
         "body": [
-            "export const $1 = '$1'",
+            "export const $1 = '$1';",
             "",
             "export const $2 = $3 => ({",
             "  type: $1,",
             "  $3",
-            "})",
+            "});",
             ""
         ],
         "description": "Create a Redux action function"
@@ -122,7 +122,7 @@
         "body": [
             "export const $1 = $2 => {",
             "  return $3",
-            "}",
+            "};",
             ""
         ],
         "description": "Create a Redux action function with return"

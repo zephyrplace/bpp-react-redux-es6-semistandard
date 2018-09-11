@@ -1,10 +1,10 @@
-# zp-react-redux-es6-standard
+# bpp-react-redux-es6-standard
 
-This is a simple colection of snippet for usage with React and Redux using ES6 and standard being using at Zeplyrplace.
+This is a simple colection of snippet for usage with React and Redux using ES6 and standard being using at BPP.
 
 ## Features
 
-[![JavaScript Style Guide](https://cdn.rawgit.com/standard/standard/master/badge.png)](https://github.com/standard/standard)
+[![js-semistandard-style](images/semi.png)](https://github.com/Flet/semistandard)
 
 ### React
 
@@ -13,13 +13,13 @@ This is a simple colection of snippet for usage with React and Redux using ES6 a
 | `rcc→` | Create a React Component Class |
 
 ``` javascript
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 export default class $1 extends Component {
   render () {
     return (
       <div>$2</div>
-    )
+    );
   }
 }
 
@@ -30,15 +30,15 @@ export default class $1 extends Component {
 | `rcs→` | Create a React Component Stateless |
 
 ``` javascript
-import React from 'react'
+import React from 'react';
 
 const $1 = () => {
   return (
     <div>$2</div>
-  )
-}
+  );
+};
 
-export default $1
+export default $1;
 
 ```
 
@@ -47,23 +47,22 @@ export default $1
 | `rccp→` | Create a React Component Class with PropTypes |
 
 ``` javascript
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 class $1 extends Component {
   render () {
     return (
       <div>$3</div>
-    )
+    );
   }
 }
 
 $1.propTypes = {
   $2
-}
+};
 
-export default $1
-
+export default $1;
 
 ```
 
@@ -72,20 +71,20 @@ export default $1
 | `rcsp→` | Create a React Component Class with PropTypes |
 
 ``` javascript
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from 'react';
+import PropTypes from 'prop-types';
 
 const $1 = props => {
   return (
     <div>$3</div>
-  )
-}
+  );
+};
 
 $1.propTypes = {
   $2
-}
+};
 
-export default $1
+export default $1;
 
 ```
 
@@ -96,13 +95,13 @@ export default $1
 | `rrcc→` | Create a Redux Container with connect and bindActionCreators |
 
 ``` javascript
-import { bindActionCreators } from 'redux'
-import { connect } from 'react-redux'
+import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
 
-const mapStateToProps = (state) => ({ $1: state.$2 })
-const mapDispatchToProps = (dispatch) => bindActionCreators($3, dispatch)
+const mapStateToProps = (state) => ({ $1: state.$2 });
+const mapDispatchToProps = (dispatch) => bindActionCreators($3, dispatch);
 
-export default connect(mapStateToProps, mapDispatchToProps)($4)
+export default connect(mapStateToProps, mapDispatchToProps)($4);
 
 ```
 
@@ -114,11 +113,11 @@ export default connect(mapStateToProps, mapDispatchToProps)($4)
 export default (state = $1, action) => {
   switch (action.type) {
     case $2:
-      $3
+      $3;
     default:
-      return state
+      return state;
   }
-}
+};
 
 ```
 
@@ -127,12 +126,12 @@ export default (state = $1, action) => {
 | `raf→` | Create a Redux action function |
 
 ``` javascript
-export const $1 = '$1'
+export const $1 = '$1';
 
 export const $2 = $3 => ({
   type: $1,
   $3
-})
+});
 
 ```
 
@@ -142,8 +141,8 @@ export const $2 = $3 => ({
 
 ``` javascript
 export const $1 = $2 => {
-  return $3
-}
+  return $3;
+};
 
 ```
 
@@ -200,25 +199,13 @@ npm install prop-types --save
 
 ## Release Notes
 
-### 0.0.4
-
-Better categories in README.md
-
-### 0.0.3
-
-New utilities snippets and update Redux action function with return
-
-### 0.0.2
-
-Update logo
-
 ### 0.0.1
 
-Initial release of the main snippets usage at Zephyrplace
+Initial release of the main snippets usage at BPP
 
 ## References
 
-* [vscode-react-standard](https://github.com/TimonVS/vscode-react-standard/)
+* [zp-react-redux-es6-standard](https://github.com/zephyrplace/zp-react-redux-es6-standard)
 
 ***
-![Zephyrplace](https://avatars0.githubusercontent.com/u/17429557?s=200&v=4)
+![BPP](images/logo_128.png)
