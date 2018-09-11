@@ -193,11 +193,15 @@ export const $1 = $2 => {
 ## Requirements
 
 ``` console
-npm install standard --save-dev
+npm install semistandard --save-dev
 npm install prop-types --save
 ```
 
 ## Release Notes
+
+### 0.0.2
+
+Update requirements
 
 ### 0.0.1
 
